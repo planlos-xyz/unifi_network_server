@@ -4,7 +4,7 @@
 ## https://planlos.xyz
 ## Release: 18.04.2024
 
-## Unifi Network Application 8.0.28
+## Unifi Network Application 8.1.113
 
 ## global Setup 
 apt update
@@ -75,7 +75,7 @@ fi
 # download and install UniFi Network Server / Application ###
 if [ ! -f unifi_sysvinit_all.deb ]
 then
-    wget https://dl.ui.com/unifi/8.0.28/unifi_sysvinit_all.deb && sudo dpkg -i unifi_sysvinit_all.deb
+    wget https://dl.ui.com/unifi/8.1.113/unifi_sysvinit_all.deb && sudo dpkg -i unifi_sysvinit_all.deb
 else
     sudo dpkg -i unifi_sysvinit_all.deb
 fi

@@ -56,7 +56,7 @@ else
     sudo dpkg -i mongodb-org-shell_3.6.23_amd64.deb
 fi
 
-if [ ! -f mongodb-org-tools_3.6.23_amd64.deb]
+if [ ! -f mongodb-org-tools_3.6.23_amd64.deb ]
 then
     wget https://repo.mongodb.org/apt/debian/dists/jessie/mongodb-org/3.6/main/binary-amd64/mongodb-org-tools_3.6.23_amd64.deb && sudo dpkg -i mongodb-org-tools_3.6.23_amd64.deb
 else
@@ -85,7 +85,7 @@ sudo systemctl enable mongod
 sudo systemctl start mongod
 
 sudo systemctl enable unifi
-sudo systemctl start unfi
+sudo service unfi start
 
 
 
